@@ -1,0 +1,35 @@
+{
+  "name": "sub-40min-10km",
+  "version": "1.0.0",
+  "description": "An app to track my to plan do a sub 40min 10km race",
+  "keywords": [
+    "running",
+    "10km"
+  ],
+  "homepage": "https://github.com/MoutaiA/sub-40min-10km#readme",
+  "bugs": {
+    "url": "https://github.com/MoutaiA/sub-40min-10km/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoutaiA/sub-40min-10km.git"
+  },
+  "license": "ISC",
+  "author": "amoutai",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "awilix": "^12.0.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10"
+  }
+}
