@@ -1,0 +1,12 @@
+sequenceDiagram
+        actor Garmin Connect
+        actor Me
+        actor Training App
+
+        Garmin Connect->>Me: Get the current workout
+        Me->>Garmin Connect: Add a new recorded run
+        Me->>Training App: Ask for an update of the plan
+        Training App->>Garmin Connect: Get the latest recorded run
+        Garmin Connect->>Training App: Return the latest workout
+        Training App->>Training App: Check for duplicates and recompute the next workout
+        Training App->>Garmin Connect: Insert the next workout to do
