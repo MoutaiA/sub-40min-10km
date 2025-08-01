@@ -22,7 +22,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+	"start": "node server.js",
+	"nodemon": "nodemon server.js"
   },
   "dependencies": {
     "awilix": "^12.0.5",

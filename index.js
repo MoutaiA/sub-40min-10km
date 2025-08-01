@@ -14,4 +14,13 @@ app.get('/healthcheck', (req, res) => {
 	});
 });
 
+app.post('/v1/training/recompute', (req, res) => {
+	let { query: { debugMode = false }} = req;
+	debugMode = Boolean(debugMode);
+
+	res.status(200).json({
+		timestamp: Date.now(),
+	});
+});
+
 export default app;
